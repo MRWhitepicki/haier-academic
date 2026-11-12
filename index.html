@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haier Academic — Техническая академия телевизоров</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar Navigation (Desktop) -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <span class="logo-icon">HA</span>
+          <div class="logo-text">
+            <span class="logo-title">Haier Academic</span>
+            <span class="logo-subtitle">Техническая академия</span>
+          </div>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#dashboard" class="nav-item active" data-section="dashboard">
+          <span class="nav-icon">📊</span>
+          <span class="nav-label">Dashboard</span>
+        </a>
+        <a href="#academy" class="nav-item" data-section="academy">
+          <span class="nav-icon">📚</span>
+          <span class="nav-label">Академия</span>
+        </a>
+        <a href="#exams" class="nav-item" data-section="exams">
+          <span class="nav-icon">📝</span>
+          <span class="nav-label">Экзамены</span>
+        </a>
+        <a href="#encyclopedia" class="nav-item" data-section="encyclopedia">
+          <span class="nav-icon">📖</span>
+          <span class="nav-label">Энциклопедия</span>
+        </a>
+        <a href="#sales" class="nav-item" data-section="sales">
+          <span class="nav-icon">💬</span>
+          <span class="nav-label">Практика продаж</span>
+        </a>
+        <a href="#comparisons" class="nav-item" data-section="comparisons">
+          <span class="nav-icon">⚖️</span>
+          <span class="nav-label">Сравнения</span>
+        </a>
+        <a href="#database" class="nav-item" data-section="database">
+          <span class="nav-icon">📺</span>
+          <span class="nav-label">База моделей</span>
+        </a>
+        <a href="#profile" class="nav-item" data-section="profile">
+          <span class="nav-icon">👤</span>
+          <span class="nav-label">Профиль</span>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-level">
+          <span class="level-badge" id="sidebar-level">Ур. 1</span>
+          <div class="xp-bar">
+            <div class="xp-fill" id="sidebar-xp-fill" style="width: 0%"></div>
+          </div>
+          <span class="xp-text" id="sidebar-xp-text">0 XP</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Меню">☰</button>
+      <div class="mobile-logo">Haier Academic</div>
+      <div class="mobile-level" id="mobile-level">Ур. 1</div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+      <!-- Sections will be rendered here by app.js -->
+    </main>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="#dashboard" class="mobile-nav-item active" data-section="dashboard">
+        <span>📊</span>
+        <span>Главная</span>
+      </a>
+      <a href="#academy" class="mobile-nav-item" data-section="academy">
+        <span>📚</span>
+        <span>Академия</span>
+      </a>
+      <a href="#exams" class="mobile-nav-item" data-section="exams">
+        <span>📝</span>
+        <span>Экзамены</span>
+      </a>
+      <a href="#encyclopedia" class="mobile-nav-item" data-section="encyclopedia">
+        <span>📖</span>
+        <span>Энциклопедия</span>
+      </a>
+      <a href="#profile" class="mobile-nav-item" data-section="profile">
+        <span>👤</span>
+        <span>Профиль</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Modal container -->
+  <div class="modal-overlay" id="modal-overlay" hidden>
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">×</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
